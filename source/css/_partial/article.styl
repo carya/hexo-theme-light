@@ -109,13 +109,14 @@ article
 
     time
       color color-meta
-      font 0.9em font-title
+      font 0.9em font-time
       margin-bottom 5px
       display block
       line-height 1
 
     .title
       font-weight normal
+      font-family font-title
       a
         color color-font
         &:hover
@@ -123,24 +124,25 @@ article
           text-decoration none
 
   .entry
+    font-family font-title
     text-align justify
     line-height 1.6
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
 
     blockquote
-      border-top 1px solid color-border
-      border-bottom 1px solid color-border
+      border-left .5em solid #eee
       font-style italic
       font-family font-serif
-      font-size 1.2em
-      padding 0 30px 15px
-      text-align center
+      font-size 1.0em
+      padding 0 2em
+      text-align left
+      max-width 600px
       footer
         border-top none
         font-size 0.8em
         line-height 1
-        margin 20px 0 0
+        margin-left 0
         padding-top 0
         cite
           &:before

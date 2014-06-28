@@ -1,5 +1,5 @@
 <article class="<%= item.layout %>">
-  <% if (item.photos && item.photos.length){ %>
+  <% if (item.photos){ %>
     <%- partial('post/gallery') %>
   <% } %>
   <div class="post-content">
@@ -32,7 +32,6 @@
       <% } else { %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
-        <%- partial('post/share') %>
       <% } %>
       <div class="clearfix"></div>
     </footer>
