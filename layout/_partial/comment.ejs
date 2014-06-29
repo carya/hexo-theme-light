@@ -1,4 +1,15 @@
 <% if (page.comments){ %>
+<nav id="pagination" >
+    <% if (page.prev) { %>
+    <a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev"
+        >上一篇: <%- page.prev.title %></a>
+    <% } %>
+    <% if (page.next) { %>
+    <a href="<%- config.root %><%- page.next.path %>" class="alignright next"
+        >下一篇: <%- page.next.title %></a>
+    <% } %>
+    <div class="clearfix"></div>
+</nav>
 <section id="comment">
     <!-- UY BEGIN -->
     <div id="uyan_frame"></div>
